@@ -1,0 +1,593 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    min-width: 320px;
+    background: #f6f6f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 28.8px;
+    }
+}
+
+html {
+    font-size: 20px;
+    font-size: 5.33333vw;
+}
+
+body {
+    font-size: 14px;
+    padding-top: 45px;
+}
+
+/* 头部 */
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    padding-right: 60px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    z-index: 999;
+    background-image: linear-gradient(0deg, #f1503b, #c82519 50%);
+}
+
+/* logo */
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 44px;
+    text-align: center;
+}
+
+header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    text-decoration: none;
+    color: #ffa800;
+    font-weight: bold;
+    position: relative;
+}
+
+header .logo a::before {
+    content: "";
+    width: 25px;
+    height: 23px;
+    background: url(../image/01.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 12px;
+    left: 23px;
+}
+
+/* 搜索框 */
+header .soso_box {
+    width: 75%;
+    height: 24px;
+    border: 1px solid #999;
+    border-radius: 14px;
+    position: relative;
+    top: 10px;
+    left: 75px;
+    background-color: white;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+header .soso_box::before {
+    content: "";
+    width: 22px;
+    height: 23px;
+    background: url(../image/02.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    position: absolute;
+    top: 5px;
+}
+
+header .soso_box input {
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    outline: none;
+    margin-left: 26px;
+    margin-top: 4px;
+}
+
+header .user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 44px;
+    text-align: center;
+}
+
+header .user a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+/* swiper轮播图 */
+.swiper-container {
+    width: 81%;
+    min-width: 320px;
+    top: 63px;
+    border-radius: 16px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 第一部分 */
+.one {
+    width: 100%;
+    min-width: 320px;
+    margin-top: 65px;
+    height: 108px;
+}
+
+.one img {
+    width: calc(100% / 3);
+    float: left;
+}
+
+/* 第二部分 */
+.banner2 {
+    background: white;
+    height: 210px;
+    top: 10px;
+}
+
+.img-box div {
+    width: calc(100% / 3);
+    float: left;
+}
+
+.img-box div img {
+    width: 100%;
+    height: 100%;
+}
+
+.ul-list {}
+
+.ul-list li {
+    float: left;
+    width: calc(100% /5);
+    margin-top: 10px;
+}
+
+.ul-list li img {
+    width: 58px;
+    height: 58px;
+    display: block;
+}
+
+.ul-list li span {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+/* 第四部分 */
+.si {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.si .cont {
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.si .cont .toubu {
+    width: 100%;
+    height: 30px;
+    background: url(../image/24.png) no-repeat;
+    background-size: contain
+}
+
+.si .cont .toubu div:nth-of-type(1) {
+    float: left;
+    display: inline-block;
+    width: 3.45rem;
+    height: 1.35rem;
+    margin-top: .4rem;
+    margin-right: .3rem;
+    margin-left: .45rem;
+    background: url(../image/34.png) no-repeat;
+    background-size: contain;
+}
+
+.si .cont .toubu strong {
+    font-size: 12px;
+    color: #232326;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.si .cont .toubu div:nth-of-type(2) {
+    float: right;
+    right: 0;
+    margin-top: 9px;
+    color: #f23030;
+}
+.si .cont .toubu div:nth-of-type(2)::after {
+    display: block;
+    content: "";
+    width: 22px;
+    height: 23px;
+    background: url(../image/35.png) no-repeat;
+    background-size: 12px 12px;
+    margin-top: -13px;
+    margin-left: 63px;
+}
+/* .... */
+.banner3 {
+    width: 100%;
+    height: 100%;
+    top: 3px;
+}
+.banner3 .swiper-slide {
+    width: calc(100% / 5);
+}
+.banner3 .swiper-slide img {
+    height: 100%;
+}
+.banner3 .swiper-slide .price {
+    width: 100%;
+    height: auto;
+}
+.banner3 .swiper-slide .price>span {
+    width: 100%;
+    display: inline-block;
+}
+.banner3 .swiper-slide .price>span:nth-of-type(1) {
+    font-family: JDZhengHT-EN-Bold;
+    color: #e93b3d;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.banner3 .swiper-slide .price>span:nth-of-type(2) {
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 11px;
+    text-align: center;
+    padding: 0 2px;
+    position: relative;
+}
+.banner3 .swiper-slide .price hr {
+    position: absolute;
+    bottom: 9px;
+    width: 65px;
+    height: 1px;
+    left: 41%;
+    background-color: #686868;
+    transform: scale(.5);
+    transform-origin: left top;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0;
+}
+/* 第五部分 */
+.five {
+    width: 100%;
+    height: auto;
+}
+.five .tu {
+    width: 94%;
+    margin: 0 auto;
+}
+.five .tu img {
+    width: 100%;
+}
+/* 东家小院 */
+.yuan {
+    width: 100%;
+    height: 390px;
+}
+.yuan .top {
+    width: 100%;
+    height: 44px;
+}
+.yuan .top>div {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+}
+.yuan .top>div img {
+    width: 100%;
+}
+.yuan .cont {
+    width: 96%;
+    height: 345px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+}
+.yuan .cont .first {
+    width: 100%;
+    height: 172px;
+    border-bottom: 1px solid #ccc;
+}
+.yuan .cont .first>div {
+    width: calc(100% / 2);
+    float: left;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+.yuan .cont .first>div>span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.125rem;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: skyblue;
+    margin-left: 10px;
+}
+.yuan .cont .first>div>p {
+    height: 22px;
+    line-height: 22px;
+    color: #666771;
+    margin-left: 10px;
+}
+.yuan .cont .first .tu {
+    width: 80%;
+    height: 93px;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+.yuan .cont .first .tu>div {
+    width: calc(100% / 2);
+    height: 100%;
+    float: left;
+}
+.yuan .cont .first .tu div img {
+    height: 100%;
+} 
+.yuan .cont .twele {
+    width: 100%;
+    height: 172px;
+}
+.yuan .cont .twele>div {
+    width: calc(100% / 4);
+    height: 100%;
+    border-right: 1px solid #ccc;
+    float: left;
+    padding: 10px;
+}
+.yuan .cont .twele>div strong {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 18px;
+}
+.yuan .cont .twele>div p {
+    color: #666771;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.yuan .cont .twele>div img {
+    height: 42%;
+    margin-top: 10px; 
+    margin-left: 3%;
+}
+/* 每日逛部分 */
+.guang {
+    width: 100%;
+    position: relative;
+}
+.guang .top {
+    width: 100%;
+    height: auto;
+}
+.guang .top .tu {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto; 
+}
+.guang .top .tu img {
+    width: 100%;
+}
+.guang .cont {
+    width: 96%;
+    margin: 0 auto;
+}
+.guang .cont>div {
+    width: calc(100% / 4);
+    height: calc(100% / 2);
+    float: left;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;  
+}
+.guang .cont>div:nth-of-type(4) {
+    border-right: none;
+}
+.guang .cont>div:nth-of-type(8) {
+    border-right: none;
+}
+.guang .cont>div .top {
+    width: 100%;
+    height: auto;
+}
+.guang .cont>div .top strong {
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+.guang .cont>div .top p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+.guang .cont>div .tu {
+    width: 100%;
+}
+.guang .cont>div .tu img {
+    display: inline-block;
+    width: 50%;
+}
+/* 商品推荐部分 */
+.jian {
+    width: 100%;
+    position: relative;
+}
+.jian .top {
+    width: 100%;
+    height: auto;
+}
+.jian .top .tu {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto; 
+}
+.jian .top .tu img {
+    width: 100%;
+}
+.jian .cont {
+    width: 96%;
+    margin: 0 auto;
+}
+.jian .cont>div {
+    width: calc(100% / 2);
+    float: left;
+    background: #fff;
+    padding: 10px;
+}
+.jian .cont>div .tu {
+    width: 100%;
+}
+.jian .cont>div .tu img {
+    width: 100%;
+}
+.jian .cont>div .shuo {
+    width: 100%;
+}
+.jian .cont .similar-product-text {
+    box-sizing: border-box;
+    height: 31px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 16px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+}
+.jian .cont>div .similar-product-info {
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    height: 26px;
+}
+.similar-product-price {
+    color: #f23030;
+    display: inline-block;
+    padding: 0 5px 0 4px;
+    position: relative;
+    top: 1px;
+    height: 25px;
+    line-height: 25px;
+}
+.similar-product-price .big-price {
+    font-size: 16px;
+}
+.guess-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    text-align: center;
+    color: #686868;
+    font-size: 12px;
+    width: 49px;
+    height: 24px;
+    line-height: 25px;
+}
+.guess-button:after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+/* 底部部分 */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+}
+footer>div {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+footer>div img {
+    width: 28%;
+}
